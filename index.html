@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" >
     <title>MKHome</title>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
     </script>
 </head>
 <body class="font-manrope">
-    <header class="mt-6 md:mt-10 px-4 md:px-0">
+    <header class="mt-6 md:mt-10 px-4 md:px-4">
         <!-- Menu Icon -->
-        <section class="flex items-center justify-between md:justify-around">
+        <section class="flex items-center justify-between md:justify-around aspect-auto" >
             <div class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#ABEF5F" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 md:size-10 -rotate-45">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -79,9 +79,9 @@
     <main class="bg-[#F4F4F4] pt-4 lg:pt-8">
         <!-- about section -->
         <img class="pl-6 mb-2 hidden lg:block" src="assets/images/Vector.png" alt="">
-         <section class="grid grid-cols-1  md:grid-cols-2 pb-12 px-4 lg:px-36 place-items-end">
+         <section class="grid grid-cols-1  md:grid-cols-2 pb-12 px-4 lg:px-20 space-x-4 place-items-end mb-8">
             <div class="grid gap-4 place-items-center lg:place-items-start ">
-                    <button class="flex rounded-xl bg-white px-3 space-x-2 items-center max-w-32 justify-start">
+                <button class="flex rounded-xl bg-white px-3 space-x-2 items-center max-w-32 justify-start">
                     <i class="fa-solid fa-arrow-right"></i>
                     <h2>About Us</h2>
                 </button>
@@ -103,9 +103,45 @@
                 </div>
             </div>
             <div>
-                <img class="w-[730px] h-[480px]"  src="assets/images/Rectangle.png" alt="">
+                <img class="w-[730px] h-[480px] mx-auto"  src="assets/images/Rectangle.png" alt="">
             </div>
         </section>
+        <!-- Work Process Section -->
+         <section class="flex flex-col px-4 md:px-20 gap-4 ">
+            <!-- 1st col -->
+            <div class="flex flex-col items-center gap-4 justify-center">
+                <button class="flex rounded-xl bg-white px-3 space-x-1 items-center max-w-40">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <h2 >How we works?</h2>
+                </button>
+                <h2 class="text-2xl md:text-4xl font-bold">Our Works Process</h2>
+                <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+             </div>
+             <!-- 2nd col -->
+             <div class="grid grid-cols-1 md:grid-cols-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0 ">
+                <div class="bg-[#E7C1D3] rounded-xl p-4 space-y-1">
+                    <img src="assets/images/concept.png" alt="">
+                    <h3 class="text-xl font-bold">Concept</h3>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="bg-[#EFDA6E] rounded-xl p-4 space-y-1">
+                    <img src="assets/images/flow-chart.png" alt="">
+                    <h3 class="text-xl font-bold">Design Process</h3>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="bg-[#A4DAC3] rounded-xl p-4 space-y-1">
+                    <img src="assets/images/vision.png" alt="">
+                    <h3 class="text-xl font-bold">Supervision</h3>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="bg-[#77AAEA] rounded-xl p-4 space-y-1">
+                    <img src="assets/images/budget-planning.png" alt="">
+                    <h3 class="text-xl font-bold">Budget Planning</h3>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+             </div>
+         </section>
+         <img class="mt-20" src="assets/images/concept.png" alt="">
     </main>
     <footer>
 
